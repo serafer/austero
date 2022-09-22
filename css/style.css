@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+* {
+    Margin: 0;
+    Padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER */
+
+
+header {
+    background-color: #29304a;
+    color: #f6f5f0;
+    position: sticky;
+    top: 0px;
+
+}
+
+header li {
+
+    margin: 5px;
+    display: inline-block;
+
+}
+
+ul {
+    list-style: none;
+    /* elimina viñeta de las lista */
+}
+
+a {
+    text-decoration: none;
+    color: #bbc2cc;
+}
+
+nav ul li {
+
+    padding-left: 30px;
+
+}
+
+.headerLogo {
+    padding: 0px;
+}
+
+
+/* MAIN */
+
+h2 {
+
+    padding: 10px;
+}
+
+main {
+    background-color: #f6f5f0;
+}
+
+.lema {
+    font-size: xx-large;
+    margin: 10%;
+}
+
+
+.somosAsuteroNosotras {
+    font-style: italic;
+    color: #29304a;
+    padding-left: 80%;
+    margin-bottom: 10%;
+
+}
+
+h4 {
+
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+main li {
+
+    display: inline-block;
+    max-width: 600px;
+    padding: 5%;
+}
+
+
+hr {
+    width: 75%;
+    color: #29304a;
+    margin-left: 12%;
+}
+
+.mainSeccioones {
+
+    font-size: x-large;
+    color: #29304a;
+    margin: 30px;
+
+}
+
+
+/* Catalogo */
+
+.productosEnStock {
+
+    max-width: 250px;
+
+}
+
+
+/* Asesoramiento */
+
+.asesoramientoCategoria {
+
+    margin: 20px;
+}
+
+
+
+/* Prefuntas Frecuentes */
+
+
+
+/* Contacto */
+
+.formContacto {
+
+    margin: 20px;
+    max-width: 300px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+
+    background-color: #e7c997;
+    color: #0b0e47;
+    font-size: 12px;
+}
+
+footer p {
+    color: black;
+    text-decoration: underline
+}
+
+footer a {
+    color: black;
+}
+
+
+.footerLogo {
+    display: inline-block;
+    margin: 10px;
+}
+
+.footerTitulos {
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+

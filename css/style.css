@@ -1,156 +1,289 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 
 html {
-    font-size: 62, 5%
+  font-size: 62, 5%;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
 }
 
 .bgHeader {
-    background-color: #29304a;
-    color: #f6f5f0;
-    text-transform: uppercase;
+  background-color: #29304a;
+  color: #f6f5f0;
+  text-transform: uppercase;
 }
 
 #tienda {
-    color: #9f9169;
-    font-weight: bolder;
+  color: #9f9169;
+  font-weight: bolder;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .iconosRedes {
-    width: 16px;
+  width: 16px;
 }
 
 main {
-    background-color: #f6f5f0;
-    color: #29304a;
+  background-color: #f6f5f0;
+  color: #29304a;
+  padding-bottom: 2em;
 }
-
 
 .indexDestacados {
-    gap: 5px;
-    padding-bottom: 3em;
+  gap: 5px;
+  padding-bottom: 3em;
 }
 
-
 .btnCustomColor {
-    background-color: #29304a;
-    color: #f6f5f0;
+  background-color: #29304a;
+  color: #f6f5f0;
 }
 
 .secciones {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
+/* .preguntasFrecuentesH2{
 
-
-.titulomedio {
-    font-size: x-large;
-    text-transform: uppercase;
-    min-height: 100px;
-}
-
-
+    text-align: ;
+} */
 
 .textos {
-    background: #c71d0600;
-    width: 100%;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  background: #c71d0600;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .mainCard {
-    border-radius: 5px;
-    min-height: 200px;
-    font-weight: bold;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  border-radius: 5px;
+  min-height: 200px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mainContactoManos {
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.mainPF,
+.mainContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPFH2,
+.mainContactoH2,
+.mainIndexH2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: x-large;
+  text-transform: uppercase;
+  min-height: 75px;
+}
+
+.mainContactoInputMaps {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1em;
+}
+
+.iframeMaps {
+  width: 100%;
+  height: 100%;
 }
 
 
 
+.mainContactoH2::after {
+  background-color: #9f9169;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 19px;
+  width: 30px;
+}
+
+.mainPFH2::after {
+  background-color: #9f9169;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 19px;
+  width: 30px;
+}
+
+.indexDestacados {
+  display: grid;
+  justify-content: space-around;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: (repeat(auto));
+}
+
+.tarjetasMP {
+  padding-top: 2px;
+}
+
+
+
+/* animaciones */
+.grow:hover {
+  transition: all 0.2s ease-in-out;
+
+  transform: scale(1.3);
+}
+
+.iconosRedes:hover {
+  transition: all 0.2s ease-in-out;
+
+  transform: scale(1.3);
+}
+
+
+/* footer */
+
 footer {
-    background-color: #e1e7ef;
-    color: #0b0e47;
-    padding: 1em;
-    font-size: 12px;
+  background-color: #e1e7ef;
+  color: #0b0e47;
+  padding: 1em;
+  font-size: 12px;
 }
 
 footer a {
-    color: #0b0e47;
+  color: #0b0e47;
 }
 
 .footerAhome {
-    width: 100px;
-    align-items: flex-start;
+  width: 13em;
+  
+
 }
 
 .footerPrincipal {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-between;
+  justify-items: center;
+
 }
 
 .footerTitulo {
-    font-weight: bolder;
-    padding-top: 1em;
+  font-weight: bolder;
+  padding-top: 1em;
 }
 
-.footerContacto{
-    display: none;
+.footerContacto {
+  display: none;
+}
+
+
+.footerLegales{
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: 1em;
+}
+
+
+/* MQuerie */
+
+@media screen and (min-width: 443px) {
+  .indexDestacados {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: (repeat(auto));
+  }
+
+  .mainContactoInputMaps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .indexDestacados {
-        display: grid;
-        justify-content: space-around;
-        align-content: center;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: (repeat(auto));
-    }
-    
+  .indexDestacados {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: (repeat(auto));
+  }
 
-    .footerPrincipal{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .footerPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .footerContacto{
+  .footerContacto {
     display: inline;
+    /* block - none - visibility hidden */
+  }
 }
-}
 
+@media screen and (min-width: 992px) {
+  .indexDestacados {
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: (repeat(auto));
+  }
 
-@media screen and (min-width: 908px) {
-    .indexDestacados {
-        display: grid;
-        justify-content: space-around;
-        align-content: center;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: (repeat(auto));
-    }
-
-.footerPrincipal{
+  .footerPrincipal {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
+  }
 
+
+
+  .underline {
+    background: linear-gradient(0deg, #9f9169, #9f9169) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+  .underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+  
+  .underline {
+    padding-bottom: 2px;
+    --bg-h: 2px;
+  }
 
 }

@@ -14,7 +14,7 @@
 
 
 <body>
-  <header class="sticky-top">
+  <header class="sticky-top headerContacto">
 
     <nav class="navbar navbar-expand-lg navbar-dark bgHeader   ">
       <div class="container-fluid">
@@ -35,21 +35,21 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./asesoramiento.html">asesoramiento</a>
+              <a class="nav-link active underline" aria-current="page" href="./asesoramiento.html">asesoramiento</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./nosotras.html">nosotras</a>
+              <a class="nav-link active underline" aria-current="page" href="./nosotras.html">nosotras</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./preguntasFrecuentes.html">preguntas
+              <a class="nav-link active underline" aria-current="page" href="./preguntasFrecuentes.html">preguntas
                 frecuentes</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="tienda" href="./shop.html" id="navbarDropdown"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle underline" id="tienda" href="./shop.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 tienda
               </a>
               <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
@@ -64,7 +64,7 @@
 
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./contacto.html">contacto</a>
+              <a class="nav-link active underline" aria-current="page" href="./contacto.html">contacto</a>
             </li>
           </ul>
 
@@ -78,134 +78,187 @@
   </header>
 
 
-    <main>
+  <main class="mainContacto ">
 
-        <h2>CONTACTO</h2>
+    <div class="container-fluid">
 
-        <section>
+      
+    <div>
+      <h2 class="mainContactoH2">CONTACTO  </h2>
+    </div>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53538.264673785256!2d-68.90181726553548!3d-33.000043627070404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e750503408331%3A0xd4c62bb79373bea4!2sLuj%C3%A1n%20de%20Cuyo%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1662473359836!5m2!1ses-419!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mainContactoManos">
+      <img class="img-fluid" src="../img/identidad/contacto-manos.jpg" alt="tela en mano">
+    </div>
 
-
-        </section>
-
-
-
-        <section class="formContacto">
-            <form>
-                <fieldset>
-                    <legend>Completa tus datos</legend>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" placeholder="Tu nombre" autocomplete="name"/>
-                    <br /><br />
-                    <label for="password">Pass</label>
-                    <input type="password" />
-                    <br /><br />
-                    <label for="email">email</label>
-                    <input type="email" autocomplete="email" placeholder="Email"/>
-                    <br /><br />
-                    <input type="submit" />
-                    <input type="reset" />
-                </fieldset>
-            </form>
-    </main>
+    <div class="mainContactoInputMaps container">
 
 
-    <footer>
 
-        <div class="footerPrincipal">
-    
-          <div class="footerLogo">
-            <div>
-              <a href="index.html"> <img class="footerAhome" src="../img/logos/ahome-azul-sin-fondo.png" alt="Logo"></a>
-            </div>
-    
+      <div class="">
+
+        <p>¿Necesita asesoramiento? ¿No ha encontrado la información que buscaba? Escribinos para lo que necesites. Te estaremos respondiendo a la brevedad.</p>
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" required>
           </div>
-    
-          <div>
-            <p class="footerTitulo">Navegación</p>
-    
-            <div>
-              <a href="./shop.html">Tienda</a>
-            </div>
-            <div>
-              <a href="./contacto.html">Contacto</a>
-            </div>
-            <div>
-              <a href="./nosotras.html">Nosotras</a>
-            </div>
-            <div>
-              <a href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
-            </div>
-            <div>
-              <a href="./asesoramiento.html">Asesoramiento</a>
+          <div class="col-md-6">
+            <label for="validationDefault02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationemail" class="form-label">email</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="email" class="form-control" id="validationemail"
+                aria-describedby="inputGroupPrepend2" required placeholder="tuemail@ejemplo.com">
             </div>
           </div>
-    
-          <div class=" footerContacto">
-            <p class="footerTitulo ">Contacto</p>
-    
-            <div>
-              <a href="https://wa.me/5492612538536?text=Hola!%20Estoy%20interesad@%20en%20los%20productos%20publicados%20en%20su%20web......"
-                target="_blank">What's
-                App</a>
-            </div>
-            <div>
-              <a href="../contacto.html">Formulario Web</a>
-            </div>
-            <div>
-              <a href="mailto:austerohomedeco@gmail.com">email</a>
-            </div>
-    
-    
-    
+          
+          <div class="col-md-6">
+            <label for="validationDefault04" class="form-label">Motivo</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Elige...</option>
+              <option value="1">Asesoramiento</option>
+              <option value="2">Cotización/Presupuesto</option>
+              <option value="3">Falta de stock</option>
+              <option value="4">Devoluciones</option>
+              <option value="5">Otro</option>
+            </select>
           </div>
-    
-          <div>
-            <p class="footerTitulo">Redes Sociales</p>
-    
-            <div>
-              <a href="https://www.instagram.com/austerohome/" target="_blank"><img class="iconosRedes"
-                  src="../img/iconos/instagram-color-48.svg" alt="instagram">
-                Instagram</a>
-            </div>
-            <div>
-              <a href="https://www.facebook.com/austerohome" target="_blank"><img class="iconosRedes"
-                  src="../img/iconos/facebook-nuevo-color-48.svg" alt="facebook">
-                Facebook</a>
-            </div>
-            <div>
-              <a href="https://www.tiktok.com/@austerohome" target="_blank"><img class="iconosRedes"
-                  src="../img/iconos/tik-tok-color-48.svg" alt="tiktok"> TikTok</a>
-            </div>
-            <div><a
-                href="https://wa.me/5492612538536?text=Hola!%20Estoy%20interesad@%20en%20los%20productos%20publicados%20en%20su%20web......"
-                target="_blank"><img class="iconosRedes" src="../img/iconos/whatsapp-color-48.svg" alt="Whatsapp"> What's
-                App</a>
+
+
+          <div class="mb-3">
+            <label for="validationTextarea" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Por favor, escriba su mensaje..." required></textarea>
+            <div class="invalid-feedback">
+              Por favor, escriba su mensaje...
             </div>
           </div>
-    
-          <div>
-            <p class="footerTitulo">Recibí todas las novedades:</p>
-            <input type="email" autocomplete="email" placeholder="Email" />
-            <input type="submit" />
+
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
           </div>
+
+          
+        </form>
+
+      </div>
+
+
+
+
+      <section>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53538.264673785256!2d-68.90181726553548!3d-33.000043627070404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e750503408331%3A0xd4c62bb79373bea4!2sLuj%C3%A1n%20de%20Cuyo%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1662473359836!5m2!1ses-419!2sar"
+           class="iframeMaps" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+      </section>
+    </div>
+
+
+
+  </main>
+
+
+  <footer>
+
+    <div class="footerPrincipal">
+
+      <div class="footerLogo">
+        <div>
+          <a href="index.html"> <img class="footerAhome" src="../img/logos/ahome-azul-sin-fondo.png" alt="Logo"></a>
         </div>
-    
-        <div class="footerLegales">
-    
-          <p>@2022 | AUSTERO Home & Deco | Todos los derechos reservados | Términos y condiciones</p>
-    
+
+      </div>
+
+      <div>
+        <p class="footerTitulo">Navegación</p>
+
+        <div>
+          <a href="./shop.html">Tienda</a>
         </div>
-      </footer>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    
-    </body>
-    
-    </html>
+        <div>
+          <a href="./contacto.html">Contacto</a>
+        </div>
+        <div>
+          <a href="./nosotras.html">Nosotras</a>
+        </div>
+        <div>
+          <a href="./preguntasFrecuentes.html">Preguntas frecuentes</a>
+        </div>
+        <div>
+          <a href="./asesoramiento.html">Asesoramiento</a>
+        </div>
+      </div>
+
+      <div class=" footerContacto">
+        <p class="footerTitulo ">Contacto</p>
+
+        <div>
+          <a href="https://wa.me/5492612538536?text=Hola!%20Estoy%20interesad@%20en%20los%20productos%20publicados%20en%20su%20web......"
+            target="_blank">What's
+            App</a>
+        </div>
+        <div>
+          <a href="../contacto.html">Formulario Web</a>
+        </div>
+        <div>
+          <a href="mailto:austerohomedeco@gmail.com">email</a>
+        </div>
+
+
+
+      </div>
+
+      <div>
+        <p class="footerTitulo">Redes Sociales</p>
+
+        <div>
+          <a href="https://www.instagram.com/austerohome/" target="_blank"><img class="iconosRedes"
+              src="../img/iconos/instagram-color-48.svg" alt="instagram">
+            Instagram</a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/austerohome" target="_blank"><img class="iconosRedes"
+              src="../img/iconos/facebook-nuevo-color-48.svg" alt="facebook">
+            Facebook</a>
+        </div>
+        <div>
+          <a href="https://www.tiktok.com/@austerohome" target="_blank"><img class="iconosRedes grow"
+              src="../img/iconos/tik-tok-color-48.svg" alt="tiktok"> TikTok</a>
+        </div>
+        <div><a
+            href="https://wa.me/5492612538536?text=Hola!%20Estoy%20interesad@%20en%20los%20productos%20publicados%20en%20su%20web......"
+            target="_blank"><img class="iconosRedes" src="../img/iconos/whatsapp-color-48.svg" alt="Whatsapp"> What's
+            App</a>
+        </div>
+      </div>
+
+      <div>
+        <p class="footerTitulo">Recibí todas las novedades:</p>
+        <input type="email" autocomplete="email" placeholder="Email" />
+        <input type="submit" />
+      </div>
+    </div>
+
+    <div class="footerLegales">
+
+      <p>@2022 | AUSTERO Home & Deco | Todos los derechos reservados | Términos y condiciones</p>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+@import "vars";
+@import "mixins";
+@import "general";
+
+.btnCustomColor {
+  background-color: $color-principal;
+  color: $color-secundario;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secciones {
+  margin-bottom: 1em;
+}
+
+.textos {
+  background: #c71d0600;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  @include uppercase;
+}
+
+.mainCard {
+  border-radius: 5px;
+  min-height: 200px;
+  font-weight: bold;
+  @include bg-card-responsive;
+}
+
+.mainContactoManos {
+  max-height: 300px;
+  @include bg-card-responsive;
+  margin-bottom: 2em;
+}
+
+.mainContactoInputMaps {
+  @include grid-2(1, 1em);
+}
+
+.iframeMaps {
+  width: 100%;
+  height: 100%;
+}
+
+.indexDestacados {
+  @include grid-4(1, 2, 3, 3, 1);
+  @include grid-contenido(center, space-around, center);
+  padding-bottom: 3em;
+}
+
+.tarjetasMP {
+  padding-top: 2px;
+}
+
+/* nosotras */
+
+.misionVision {
+  @include flex(row, nowrap, center, center);
+  margin-bottom: 1em;
+
+  @media screen and (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
+}
+
+.teamGrid {
+  @include grid-4(1, 1, 2, 2, 5em);
+  @include grid-contenido(center, center, center);
+
+  p {
+    margin-top: 5em;
+  }
+}
+
+/* Asesoramiento */
+
+.asesoramiento {
+  img {
+    height: 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    img {
+      display: none;
+    }
+  }
+}
+
+.asesorias {
+  @include flex(row, nowrap, center, center);
+}
+
+.proyectosGrid {
+  @include grid-4(1, 1, 2, 3, 1em);
+  @include grid-contenido(center, center, center);
+
+  img {
+    max-height: 220px;
+  }
+}
+
+.proyectosCard {
+  @include grid(1, 1em);
+  @include grid-contenido(stretch, center, center);
+  grid-template-rows: 1fr 1fr;
+  align-content: stretch;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Posicionamiento de footer */
+
+.bodyNosotras {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* tienda */
+
+.tituloShop {
+
+  @include grid (3,1);
+
+}
+
+  .btn-filtro{
+@include flex (row, nowrap, center,center);
+  }
+
+.shopGrid {
+  @include grid-4(1, 1, 2, 3, 1em);
+  @include grid-contenido(center, center, center);
+  @media screen and (min-width: 1120px) {
+    grid-template-columns: repeat((4), 1fr);
+    margin-bottom: 2rem;
+  }
+}
+
+
+.stock{
+
+  font-weight: 600;
+      color: grey;
+}
+
+
+.cardTitulo {
+@extend .textos;
+font-size: large;
+}
+
+.cardTextos{
+
+  @include flex (column,nowrap,space-between,center);
+}
+
+/* MQuerie */
+
+@media screen and (min-width: 443px) {
+}
+
+@media screen and (min-width: 768px) {
+  .footerContacto {
+    display: inline;
+    /* block - none - visibility hidden */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .underline {
+    background: linear-gradient(0deg, $color-tienda, $color-tienda) no-repeat
+      right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+
+  .underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+
+  .underline {
+    padding-bottom: 2px;
+    --bg-h: 2px;
+  }
+}
+
+
+
+
+
+

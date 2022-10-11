@@ -1,0 +1,81 @@
+@mixin uppercase {
+  text-transform: uppercase;
+}
+
+@mixin bg-card-responsive {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin underline {
+  background-color: #9f9169;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 19px;
+  width: 30px;
+}
+
+@mixin flex($direction, $wrap, $just, $align) {
+  display: flex;
+  flex-flow: $direction $wrap;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin grid($columnas, $espacio) {
+  display: grid;
+  grid-template-columns: repeat($columnas, 1fr);
+  grid-template-rows: (repeat(auto));
+  gap: $espacio;
+}
+
+@mixin grid-contenido ($galing, $gjustC, $gjustI) {
+  align-content: $galing;
+  justify-content: $gjustC;
+  justify-items: $gjustI;
+  
+}
+
+@mixin grid-4($columnas-g4,$columnas-g4-443,$columnas-g4-768,$columnas-g4-992, $espacio4) {
+  display: grid;
+  grid-template-columns: repeat($columnas-g4, 1fr);
+  grid-template-rows: (repeat(auto));
+  gap: $espacio4;
+
+  @media screen and (min-width: 443px) {
+    grid-template-columns: repeat(($columnas-g4-443), 1fr);
+    gap: $espacio4;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(($columnas-g4-768), 1fr);
+    gap: ($espacio4 + 1);
+  }
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(($columnas-g4-992), 1fr);
+    gap: ($espacio4 + 2);
+  }
+}
+
+@mixin grid-2($columnas2, $espacio2) {
+  display: grid;
+  grid-template-columns: repeat($columnas2, 1fr);
+  grid-template-rows: (repeat(auto));
+  gap: $espacio2;
+
+  @media screen and (min-width: 443px) {
+    grid-template-columns: repeat(($columnas2 * 2), 1fr);
+    gap: ($espacio2);
+  }
+}
+
+
+@mixin animacion-grow {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.3);
+}

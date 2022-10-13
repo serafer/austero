@@ -35,14 +35,19 @@
   gap: $espacio;
 }
 
-@mixin grid-contenido ($galing, $gjustC, $gjustI) {
+@mixin grid-contenido($galing, $gjustC, $gjustI) {
   align-content: $galing;
   justify-content: $gjustC;
   justify-items: $gjustI;
-  
 }
 
-@mixin grid-4($columnas-g4,$columnas-g4-443,$columnas-g4-768,$columnas-g4-992, $espacio4) {
+@mixin grid-4(
+  $columnas-g4,
+  $columnas-g4-443,
+  $columnas-g4-768,
+  $columnas-g4-992,
+  $espacio4
+) {
   display: grid;
   grid-template-columns: repeat($columnas-g4, 1fr);
   grid-template-rows: (repeat(auto));
@@ -73,7 +78,6 @@
     gap: ($espacio2);
   }
 }
-
 
 @mixin animacion-grow {
   transition: all 0.2s ease-in-out;

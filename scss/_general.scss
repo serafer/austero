@@ -53,8 +53,7 @@ h1 {
   }
 }
 
-h2{
-
+h2 {
   @extend h1;
   font-size: large;
 }
@@ -62,6 +61,11 @@ h2{
 h3 {
   @extend h1;
   font-size: medium;
+}
+
+.btnCustomColor {
+  background-color: $color-principal;
+  color: $color-secundario;
 }
 
 .footerContacto {
@@ -105,63 +109,89 @@ footer {
   }
 }
 
-
-
-/* info en card  */
+/* animación info en cards shop.html */
 /* https://codepen.io/olhilton/pen/dXaqxE  */
 
-
-
-.inside{
-  z-index:9;
+.inside {
+  z-index: 9;
   background: $color-principal;
-  width:140px;
-  height:140px;
+  width: 140px;
+  height: 140px;
   position: absolute;
   top: -70px;
   right: -70px;
   border-radius: 0px 0px 200px 200px;
   transition: all 0.5s, border-radius 2s, top 1s;
   overflow: hidden;
-  .icon{
-    position:absolute;
-    right:85px;
-    top:85px;
-    color:white;
+  .icon {
+    position: absolute;
+    right: 85px;
+    top: 85px;
+    color: white;
     opacity: 1;
   }
-  &:hover{
-    width:100%;
-    right:0;
-    top:0;
+  &:hover {
+    width: 100%;
+    right: 0;
+    top: 0;
     border-radius: 0;
-    height:90%;
-    .icon{
+    height: 90%;
+    .icon {
       opacity: 0;
-      right:15px;
-      top:15px;
+      right: 15px;
+      top: 15px;
     }
-    .contents{
+    .contents {
       opacity: 1;
       transform: scale(1);
       transform: translateY(0);
     }
   }
-  .contents{
+  .contents {
     padding: 5%;
     opacity: 0;
     transform: scale(0.5);
     transform: translateY(-200%);
     transition: opacity 0.2s, transform 0.8s;
-    table{
-      text-align:left;
-      width:100%;
+    table {
+      text-align: left;
+      width: 100%;
     }
-    h1, p, table{
+    h1,
+    p,
+    table {
       color: white;
     }
-    p{
-      font-size:13px;
+    p {
+      font-size: 13px;
     }
+  }
+}
+
+/* MQuerie */
+
+@media screen and (min-width: 768px) {
+  .footerContacto {
+    display: inline;
+    /* block - none - visibility hidden */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .underline {
+    background: linear-gradient(0deg, $color-tienda, $color-tienda) no-repeat
+      right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+
+  .underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+
+  .underline {
+    padding-bottom: 2px;
+    --bg-h: 2px;
   }
 }

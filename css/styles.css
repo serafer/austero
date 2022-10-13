@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
 * {
   margin: 0;
@@ -62,6 +63,11 @@ h3 {
   font-size: medium;
 }
 
+.btnCustomColor {
+  background-color: #29304a;
+  color: #f6f5f0;
+}
+
 .footerContacto {
   display: none;
 }
@@ -124,7 +130,7 @@ footer .footerLegales {
   margin-top: 1em;
 }
 
-/* info en card  */
+/* animación info en cards shop.html */
 /* https://codepen.io/olhilton/pen/dXaqxE  */
 .inside {
   z-index: 9;
@@ -173,18 +179,38 @@ footer .footerLegales {
   text-align: left;
   width: 100%;
 }
-.inside .contents h1, .inside .contents h2, .inside .contents h3, .inside .contents p, .inside .contents table {
+.inside .contents h1, .inside .contents h2, .inside .contents h3,
+.inside .contents p,
+.inside .contents table {
   color: white;
 }
 .inside .contents p {
   font-size: 13px;
 }
 
-.btnCustomColor {
-  background-color: #29304a;
-  color: #f6f5f0;
+/* MQuerie */
+@media screen and (min-width: 768px) {
+  .footerContacto {
+    display: inline;
+    /* block - none - visibility hidden */
+  }
 }
-
+@media screen and (min-width: 992px) {
+  .underline {
+    background: linear-gradient(0deg, #9f9169, #9f9169) no-repeat right bottom/0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+  .underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+  .underline {
+    padding-bottom: 2px;
+    --bg-h: 2px;
+  }
+}
+/* index */
 .secciones {
   margin-bottom: 1em;
 }
@@ -208,36 +234,6 @@ footer .footerLegales {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.mainContactoManos {
-  max-height: 300px;
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 2em;
-}
-
-.mainContactoInputMaps {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(auto);
-  gap: 1em;
-}
-@media screen and (min-width: 443px) {
-  .mainContactoInputMaps {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-  }
-}
-
-.iframeMaps {
-  width: 100%;
-  height: 100%;
 }
 
 .indexDestacados {
@@ -269,6 +265,38 @@ footer .footerLegales {
   }
 }
 
+/* contacto */
+.mainContactoManos {
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.mainContactoInputMaps {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 1em;
+}
+@media screen and (min-width: 443px) {
+  .mainContactoInputMaps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+.iframeMaps {
+  width: 100%;
+  height: 100%;
+}
+
+/* Preguntas Frecuentes */
 .tarjetasMP {
   padding-top: 2px;
 }
@@ -316,6 +344,13 @@ footer .footerLegales {
 }
 .teamGrid p {
   margin-top: 5em;
+}
+
+/* Posicionamiento de footer en Nosotras */
+.bodyNosotras {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* Asesoramiento */
@@ -381,13 +416,6 @@ footer .footerLegales {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Posicionamiento de footer */
-.bodyNosotras {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto 1fr auto;
-}
-
 /* tienda */
 .tituloShop {
   display: grid;
@@ -439,7 +467,7 @@ footer .footerLegales {
 
 .stock {
   font-weight: 600;
-  color: grey;
+  color: rgb(30, 167, 53);
 }
 
 .cardTitulo {
@@ -451,27 +479,4 @@ footer .footerLegales {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
-}
-
-/* MQuerie */
-@media screen and (min-width: 768px) {
-  .footerContacto {
-    display: inline;
-    /* block - none - visibility hidden */
-  }
-}
-@media screen and (min-width: 992px) {
-  .underline {
-    background: linear-gradient(0deg, #9f9169, #9f9169) no-repeat right bottom/0 var(--bg-h);
-    transition: background-size 350ms;
-    --bg-h: 100%;
-  }
-  .underline:where(:hover, :focus-visible) {
-    background-size: 100% var(--bg-h);
-    background-position-x: left;
-  }
-  .underline {
-    padding-bottom: 2px;
-    --bg-h: 2px;
-  }
 }/*# sourceMappingURL=styles.css.map */

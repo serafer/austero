@@ -38,7 +38,8 @@ main {
 
 h1, h3, h2 {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   font-size: x-large;
@@ -124,7 +125,8 @@ footer .footerTitulo {
 }
 footer .footerLegales {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   margin-top: 1em;
@@ -304,7 +306,8 @@ footer .footerLegales {
 /* nosotras */
 .misionVision {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 1em;
@@ -315,35 +318,30 @@ footer .footerLegales {
   }
 }
 
+.teamFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.teamFlex img {
+  border-radius: 5px;
+  margin-bottom: 3em;
+}
+.teamFlex p {
+  margin-top: 5em;
+}
+
 .teamGrid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(auto);
-  gap: 5em;
+  gap: 10 px;
   align-content: center;
   justify-content: center;
   justify-items: center;
-}
-@media screen and (min-width: 443px) {
-  .teamGrid {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 5em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .teamGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6em;
-  }
-}
-@media screen and (min-width: 992px) {
-  .teamGrid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 7em;
-  }
-}
-.teamGrid p {
-  margin-top: 5em;
 }
 
 /* Posicionamiento de footer en Nosotras */
@@ -365,7 +363,8 @@ footer .footerLegales {
 
 .asesorias {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -426,7 +425,8 @@ footer .footerLegales {
 
 .btn-filtro {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -476,7 +476,8 @@ footer .footerLegales {
 
 .cardTextos {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }/*# sourceMappingURL=styles.css.map */

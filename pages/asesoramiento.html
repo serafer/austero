@@ -215,10 +215,59 @@
         <div class="card proyectosCard" style="width: 18rem; height: 30rem;">
           <img src="../img/svg/undraw_building_re_xfcm.svg" class="card-img-top" alt="hotel">
           <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod deserunt enim natus
-              molestias ipsa eum rem ducimus dignissimos facilis dolorem, ipsam non at itaque unde debitis
-              exercitationem similique autem aliquid? </p>
+            <h3 class="card-text">Paso de Los Andes</h3>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pasoLosAndesModal">
+              visualizar
+            </button>
+
           </div>
+
+          <div class="modal fade" id="pasoLosAndesModal" tabindex="-1" aria-labelledby="pasoLosAndesModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title fs-5" id="pasoLosAndesModalLabel">Paso de los andes</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                  <div id="pasoLosAndesCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../img/identidad/asesoramiento-proyectos-paso-los-andes-00.webp" class="d-block w-25"
+                          alt="Sillon en Paso de los Andes Antes">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../img/identidad/asesoramiento-proyectos-paso-los-andes-01.webp" class="d-block w-25"
+                          alt="Sillon en Paso de los Andes Después">
+                      </div>
+
+                    </div>
+                    <button class="pasoLosAndesCarousel-control-prev" type="button"
+                      data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="pasoLosAndesCarousel-control-next" type="button"
+                      data-bs-target="#pasoLosAndesCarousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  <p>Intervención en sillón</p>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <div class="card proyectosCard" style="width: 18rem;height: 30rem;">

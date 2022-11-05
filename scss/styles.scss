@@ -117,25 +117,7 @@
   @include flex(row, nowrap, center, center);
 }
 
-.proyectosGrid {
-  @include grid-4(1, 1, 2, 3, 1em);
-  @include grid-contenido(center, center, center);
 
-  img {
-    max-height: 220px;
-  }
-}
-
-.proyectosCard {
-  @include grid(1, 1em);
-  @include grid-contenido(stretch, center, center);
-  grid-template-rows: 1fr 1fr;
-  align-content: stretch;
-
-  &:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-  }
-}
 
 /* tienda */
 

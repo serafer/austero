@@ -1,0 +1,112 @@
+.contTienda {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: $color-secundario;
+    padding-bottom: 3em;
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.contProductos {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.imgTienda {
+
+    max-width: 100%;
+
+}
+
+.precioCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.prodtuctosCarroImgCont{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.btnCategoria,  .btnCarrito {
+
+    background-color: transparent;
+    border: 0; 
+    color: $color-principal;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+
+.contenedorProdutosCarrito{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.productosCarro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #9f91692c;
+    gap: 5px;
+    padding-right: 1rem;
+
+}
+
+.productosCarroCard {
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: space-around;
+    @include grid-4(6, 6, 6, 6, 6);
+    @include grid-contenido(space-between, center, center);
+}
+
+.prodtuctosCarroImg{
+    width: 4rem;
+    border-radius: 8%;
+
+}
+
+.btnEliminar {
+border: 0;
+background-color: transparent;
+cursor: pointer;
+
+}
+
+.carritoBotones {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.asideActive {
+    background-color: $color-principal;
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+    color: $color-secundario;
+}

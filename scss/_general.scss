@@ -28,6 +28,11 @@ header {
     font-weight: bolder;
   }
 
+  #tiendaJS {
+    color: $color-tienda;
+    font-weight: bolder;
+  }
+
   .bgHeader {
     background-color: $color-principal;
     color: $color-secundario;
@@ -195,3 +200,6 @@ footer {
     --bg-h: 2px;
   }
 }
+
+
+

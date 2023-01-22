@@ -1,0 +1,154 @@
+[
+    {
+        "id": "AANDINOBLANCO",
+        "nombre": "Almohadon Andino",
+        "imagen": "../img/productos/almohadon-andino-blanco-00.webp",
+        "categoria": "almohadon",
+        "precio": "2500",
+        "color": "blanco",
+        "stock": "100",
+        "sale": ""
+    },
+    {
+        "id": "AAUSTEROVERDESECO",
+        "nombre": "Almohadon Austero",
+        "imagen": "../img/productos/almohadon-austero-verde-seco-00.webp",
+        "categoria": "almohadon",
+        "precio": "3505",
+        "color": "verde seco",
+        "stock": "350",
+        "sale": ""
+    },
+    {
+        "id": "AAUSTERORAYADO",
+        "nombre": "Almohadon Austero Rayado",
+        "imagen": "../img/productos/almohadon-austero-rayado-gris-perla-elefante-00.webp",
+        "categoria": "almohadon",
+        "precio": "5201",
+        "color": "GRIS PERLA/GRIS ELEFANTE",
+        "stock": "58",
+        "sale": ""
+    },
+    {
+        "id": "ALITORALACERO",
+        "nombre": "almohadon litoral azul acero",
+        "imagen": "../img/productos/almohadon-litoral-azul-acero-00.webp",
+        "categoria": "almohadon",
+        "precio": "1000",
+        "color": "AZUL ACERO",
+        "stock": "58",
+        "sale": ""
+    },
+    {
+        "id": "AOASISGRAFITO",
+        "nombre": "almohadon oasis grafito",
+        "imagen": "../img/productos/almohadon-oasis-grafito-lazo-00.webp",
+        "categoria": "almohadon",
+        "precio": "5000",
+        "color": "grafito",
+        "stock": "855",
+        "sale": ""
+    },
+    {
+        "id": "CESTOMULTIUSO25ROSA",
+        "nombre": "cesto organizador multiuso rosa viejo",
+        "imagen": "../img/productos/cesto-rosa-03.webp",
+        "categoria": "cesto",
+        "precio": "800",
+        "color": "ROSA VIEJO/CRUDO",
+        "stock": "20",
+        "sale": ""
+    },
+    {
+        "id": "CESTOMULTIUSO25CENIZA",
+        "nombre": "cesto organizador multiuso ceniza",
+        "imagen": "../img/productos/cesto-ceniza-00.webp",
+        "categoria": "cesto",
+        "precio": "800",
+        "color": "CENIZA/GRIS",
+        "stock": "15",
+        "sale": ""
+    },
+    {
+        "id": "CORTINALINO",
+        "nombre": "paño cortina lino",
+        "imagen": "../img/productos/cortina-lino-cort-gris-00.webp",
+        "categoria": "cortina",
+        "precio": "5800",
+        "color": "Sin definir",
+        "stock": "1000",
+        "sale": ""
+    },
+    {
+        "id": "IAUSTEROCRUDOX6",
+        "nombre": "individual boho elefante x6",
+        "imagen": "../img/productos/individual-boho-crudo-00.webp",
+        "categoria": "individuales",
+        "precio": "3000",
+        "color": "CRUDO",
+        "stock": "700",
+        "sale": ""
+    },
+    {
+        "id": "MCOLMENAGRAFITO",
+        "nombre": "manta colmena grafito",
+        "imagen": "../img/productos/manta-colmena-grafito-00.webp",
+        "categoria": "manta",
+        "precio": "2500",
+        "color": "GRAFITO",
+        "stock": "214",
+        "sale": ""
+    },
+    {
+        "id": "MCOLMENAELEFANTE",
+        "nombre": "manta colmena gris elefante",
+        "imagen": "../img/productos/manta-colmena-gris-elefante-00.webp",
+        "categoria": "manta",
+        "precio": "3750",
+        "color": "GRIS ELEFANTE",
+        "stock": "70",
+        "sale": ""
+    },
+    {
+        "id": "MCOLMENAGRISPERLA",
+        "nombre": "manta colmena gris perla",
+        "imagen": "../img/productos/manta-colmena-gris-perla-00.webp",
+        "categoria": "manta",
+        "precio": "250",
+        "color": "GRIS PERLA",
+        "stock": "85",
+        "sale": ""
+    },
+    {
+        "id": "MCOLMENAFLAMENCO",
+        "nombre": "manta colmena rosa flamenco",
+        "imagen": "../img/productos/manta-colmena-rosa-flamenco-00.webp",
+        "categoria": "manta",
+        "precio": "2500",
+        "color": "ROSA FLAMENCO",
+        "stock": "30",
+        "sale": ""
+    },
+    {
+        "id": "MANDINABLANCA",
+        "nombre": "manta andina blanca",
+        "imagen": "../img/productos/manta-andina-blanco-00.webp",
+        "categoria": "manta",
+        "precio": "4500",
+        "color": "BLANCA",
+        "stock": "400",
+        "sale": ""
+    },
+    {
+        "id": "MANTELPETRAELEFANTE",
+        "nombre": "manta petra elefante",
+        "imagen": "../img/productos/manta-petra-gris-elefante-00.webp",
+        "categoria": "manta",
+        "precio": "4500",
+        "color": "GRIS ELEFANTE",
+        "stock": "457",
+        "sale": ""
+    }
+
+]
+

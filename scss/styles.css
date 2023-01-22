@@ -1,0 +1,560 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+html a {
+  text-decoration: none;
+}
+html ul li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
+header #tienda {
+  color: #9f9169;
+  font-weight: bolder;
+}
+header #tiendaJS {
+  color: #9f9169;
+  font-weight: bolder;
+}
+header .bgHeader {
+  background-color: #29304a;
+  color: #f6f5f0;
+  text-transform: uppercase;
+}
+
+main {
+  background-color: #f6f5f0;
+  color: #29304a;
+  padding-bottom: 2em;
+}
+
+h1, h3, h2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  text-transform: uppercase;
+  min-height: 75px;
+  color: #29304a;
+}
+h1::after, h3::after, h2::after {
+  background-color: #9f9169;
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 19px;
+  width: 30px;
+}
+
+h2 {
+  font-size: large;
+}
+
+h3 {
+  font-size: medium;
+}
+
+.btnCustomColor {
+  background-color: #29304a;
+  color: #f6f5f0;
+}
+
+.footerContacto {
+  display: none;
+}
+
+footer {
+  background-color: #e1e7ef;
+  color: #29304a;
+  padding: 1em;
+  font-size: 12px;
+}
+footer .footerGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 0;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: center;
+}
+@media screen and (min-width: 443px) {
+  footer .footerGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .footerGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer .footerGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2;
+  }
+}
+footer a {
+  color: #29304a;
+}
+footer .footerAhome {
+  width: 13em;
+}
+footer .iconosRedes {
+  width: 16px;
+}
+footer .iconosRedes:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.3);
+}
+footer .footerTitulo {
+  font-weight: bolder;
+  padding-top: 1em;
+}
+footer .footerLegales {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+/* animación info en cards shop.html */
+/* https://codepen.io/olhilton/pen/dXaqxE  */
+.inside {
+  z-index: 9;
+  background: #29304a;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  border-radius: 0px 0px 200px 200px;
+  transition: all 0.5s, border-radius 2s, top 1s;
+  overflow: hidden;
+}
+.inside .icon {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  color: white;
+  opacity: 1;
+}
+.inside:hover {
+  width: 100%;
+  right: 0;
+  top: 0;
+  border-radius: 0;
+  height: 90%;
+}
+.inside:hover .icon {
+  opacity: 0;
+  right: 15px;
+  top: 15px;
+}
+.inside:hover .contents {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateY(0);
+}
+.inside .contents {
+  padding: 5%;
+  opacity: 0;
+  transform: scale(0.5);
+  transform: translateY(-200%);
+  transition: opacity 0.2s, transform 0.8s;
+}
+.inside .contents table {
+  text-align: left;
+  width: 100%;
+}
+.inside .contents h1, .inside .contents h2, .inside .contents h3,
+.inside .contents p,
+.inside .contents table {
+  color: white;
+}
+.inside .contents p {
+  font-size: 13px;
+}
+
+/* MQuerie */
+@media screen and (min-width: 768px) {
+  .footerContacto {
+    display: inline;
+    /* block - none - visibility hidden */
+  }
+}
+@media screen and (min-width: 992px) {
+  .underline {
+    background: linear-gradient(0deg, #9f9169, #9f9169) no-repeat right bottom/0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+  .underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+  .underline {
+    padding-bottom: 2px;
+    --bg-h: 2px;
+  }
+}
+.contTienda {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: #f6f5f0;
+  padding-bottom: 3em;
+}
+
+aside {
+  padding: 2rem;
+  padding-right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contProductos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.imgTienda {
+  max-width: 100%;
+}
+
+.precioCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.prodtuctosCarroImgCont {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.btnCategoria, .btnCarrito {
+  background-color: transparent;
+  border: 0;
+  color: #29304a;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contenedorProdutosCarrito {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.productosCarro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(159, 145, 105, 0.1725490196);
+  gap: 5px;
+  padding-right: 1rem;
+}
+
+.productosCarroCard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 6;
+  align-content: space-between;
+  justify-content: center;
+  justify-items: center;
+}
+@media screen and (min-width: 443px) {
+  .productosCarroCard {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .productosCarroCard {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 7;
+  }
+}
+@media screen and (min-width: 992px) {
+  .productosCarroCard {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8;
+  }
+}
+
+.prodtuctosCarroImg {
+  width: 4rem;
+  border-radius: 8%;
+}
+
+.btnEliminar {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.carritoBotones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.asideActive {
+  background-color: #29304a;
+  padding: 0.15rem 0.25rem;
+  border-radius: 0.25rem;
+  color: #f6f5f0;
+}
+
+/* index */
+.secciones {
+  margin-bottom: 1em;
+}
+
+.textos, .cardTitulo {
+  background: rgba(199, 29, 6, 0);
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mainCard {
+  border-radius: 5px;
+  min-height: 200px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.indexDestacados {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 1;
+  align-content: center;
+  justify-content: space-around;
+  justify-items: center;
+  padding-bottom: 3em;
+}
+@media screen and (min-width: 443px) {
+  .indexDestacados {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .indexDestacados {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2;
+  }
+}
+@media screen and (min-width: 992px) {
+  .indexDestacados {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3;
+  }
+}
+
+/* contacto */
+.mainContactoManos {
+  max-height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.mainContactoInputMaps {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 1em;
+}
+@media screen and (min-width: 443px) {
+  .mainContactoInputMaps {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+.iframeMaps {
+  width: 100%;
+  height: 100%;
+}
+
+/* Preguntas Frecuentes */
+.tarjetasMP {
+  padding-top: 2px;
+}
+
+/* nosotras */
+.misionVision {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+  .misionVision img {
+    display: none;
+  }
+}
+
+.teamFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+.teamFlex img {
+  border-radius: 5px;
+  margin-bottom: 3em;
+}
+.teamFlex p {
+  margin-top: 5em;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 10 px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Posicionamiento de footer en Nosotras */
+.bodyNosotras {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* Asesoramiento */
+.asesoramiento img {
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .asesoramiento img {
+    display: none;
+  }
+}
+
+.asesorias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tienda */
+.tituloShop {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 1;
+}
+
+.btn-filtro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 1em;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+@media screen and (min-width: 443px) {
+  .shopGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shopGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .shopGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .shopGrid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 2rem;
+  }
+}
+
+.stock {
+  font-weight: 600;
+  color: rgb(30, 167, 53);
+}
+
+.cardTitulo {
+  font-size: large;
+}
+
+.cardTextos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
